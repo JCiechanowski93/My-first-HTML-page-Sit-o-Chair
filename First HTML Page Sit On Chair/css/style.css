@@ -1,0 +1,542 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Raleway', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.headerSitOnChair {
+    background: black;
+    height: 41px; 
+}
+.logoSitOnChair{
+    color:white;
+    font-family:'Raleway', sans-serif;
+    font-size: 13px;
+    float: left;
+    width: 65%;
+    height: 41px;
+    box-sizing: border-box;
+    padding-top: 11px;
+     padding-left: 63px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.logoSitOnChair > span{
+    color: #24BA9F;
+    font-weight: 800;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+.logo:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-family:'Raleway', sans-serif;
+    font-size: 13px;
+    height: 41px;
+    box-sizing: border-box;
+    align-items: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.nav-list__link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.nav-list.dropdown{
+    display: none;
+    position: absolute;
+    background: black;
+    left: -10px;
+    top: 35px;
+    color: white;
+  }
+  .nav-list__subitem a{
+    padding: 10px;
+    background: black;
+  }
+  .nav-list__item.drop{
+    position: relative;
+  }
+  .nav-list__item.drop:hover .nav-list.dropdown{
+    display: block;
+  }
+  .menu-triangle {
+    width: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 10px solid transparent;
+    border-bottom-color: black;
+    position: absolute;
+    left: 30px;
+    top: -18px;
+  }
+  .main__part {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,204,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=0 );
+    height: 505px;
+  }
+  .box {
+    display: flex;
+    position:relative;
+  }
+  .arrow--left{
+    position: absolute;
+    color: #24BA9F;
+    font-size: 80px;
+    margin-top:210px;
+    z-index: 2;
+}
+.arrow--right{
+    position: absolute;
+    color: #24BA9F;
+    font-size: 80px;
+    right:0;
+    margin-top:210px;
+    display: block;
+    z-index: 2;
+}
+.arrow--right:hover, .arrow--left:hover {
+    cursor: pointer;
+}
+
+  .black__chair__image {
+    background-image: url("../images/black_chair.png");
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 40%;
+    margin:105px 0 0 40px;
+  }
+  .description_sitOnChair {
+    width: 43%;
+    font-family:'Raleway', sans-serif;
+  }
+  .description_sitOnChair > p span{
+   color: #24BA9F;
+   text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  }
+  .description_sitOnChair p:first-child {
+    text-align: center;
+    margin-top:135px;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 800;
+  }
+  .description_sitOnChair p:nth-child(2) {
+    margin-top:32px;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-align: center;
+    word-spacing: 0.5em;
+  }
+  .description__button {
+    width: 270px;
+    height: 55px;
+    box-shadow: none;
+    border-radius: 10px;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    background-color: #24BA9F;
+    color: white;
+    text-transform: uppercase;
+    margin: 30px 0 0 100px;
+  }
+  .description__button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    color: #24BA9F;
+  }
+  .chair_images {
+    height: 295px;
+  }
+  .article{
+    margin-top: 30px;
+    float: left;
+    border: 1px solid rgb(217, 217, 217);
+    width: 332px;
+    padding: 25px 30px 38px 20px;
+  }
+  .article-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .article:after{
+    content: "";
+    display: block;
+    clear: both;
+} 
+  .chair_photography {
+    float: left;
+    height: 225px;
+    width: 329px;
+    position: relative;
+    margin: 30px 30px 0 0;
+  }
+  .photo1 {
+    background-image: url("..//images/box1_img.jpg");
+  }
+  .photo2 {
+    background-image: url("..//images/box2_img.jpg");
+  }
+  .transparentPart {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    bottom: -8px;
+    font-weight: bold;
+    padding: 15px 0 0 14px;
+  }
+  .uText::after {
+    display: block;
+    content: "";
+    background-color: #24ba9f;
+    width: 136px;
+    height: 7px;
+    margin-top: 1px;
+  }
+  .uText {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .uText2 {
+    font-size: 23px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .uText2::after {
+    margin-top: 5px;
+    width: 318px;
+  }
+  .price_section{ 
+    height: 630px;
+    widows: 942px;
+    background-color:#f1f1f1;
+  }
+  .priceBox {
+    float: left;
+    margin: 58px 36px 0 0;
+    border: 2px solid rgb(217, 217, 217);
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    height: 500px;
+  }
+  .priceBox::before {
+    background-color: white;
+    content: "";
+    width: 55px;
+    height: 55px;
+    border: 2px solid rgb(217, 217, 217);
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    -o-transform: translate(-50%, -50%); /* Opera */
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    transform: translate(-50%, -50%);
+  }
+  .priceBox::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #c2c2c2;
+    border: 2px solid #c2c2c2;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    -o-transform: translate(-50%, -50%); /* Opera */
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    transform: translate(-50%, -50%);
+  }
+  .priceBoxLast {
+    margin-right: 0;
+  }
+  .active2 {
+    background-color: #24ba9f;
+    border: 2px solid #24ba9f;
+  }
+  .active2::after {
+    background-color: white;
+    border: 2px solid #24ba9f;
+  }
+  .active2::before {
+    background-color: #24ba9f;
+    border: 2px solid #24ba9f;
+  }
+  .planName {
+    color: #24ba9f;
+    font-size: 25px;
+    text-align: center;
+    margin: 24px 0 24px 0;
+     text-transform: uppercase;
+  }
+  .activeName {
+    color: white;
+  }
+  .circlePrice {
+    border: 2px solid rgb(217, 217, 217);
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 55px;
+    font-weight: bold;
+    color: #c2c2c2;
+    padding-top: 12px;
+    position: relative;
+  }
+  .listBox {
+    margin-top: 32px;
+    font-size: 24px;
+    color: #777777;
+    list-style-type: none;
+  }
+  .listBox li:nth-child(2n){
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  .listBox li:nth-child(2n+1){
+    text-align: center;
+    background-color: #e4e4e4;
+    padding: 6px;
+  }
+  .listBox2 li:nth-child(2n+1){
+    text-align: center;
+    background-color: white;
+    color: #777777;
+    padding: 6px;
+  }
+  .join {
+    font-weight: 400;
+    text-align: center;
+    padding: 7px;
+    width: 150px;
+    background-color: #24ba9f;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    text-transform: uppercase;
+    -ms-transform: translateX(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+    -o-transform: translateX(-50%); /* Opera */
+    -moz-transform: translateX(-50%); /* Firefox */
+    transform: translateX(-50%);
+  }
+  .priceDescription {
+    font-size: 16px;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    -ms-transform: translateX(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+    -o-transform: translateX(-50%); /* Opera */
+    -moz-transform: translateX(-50%); /* Firefox */
+    transform: translateX(-50%);
+  }
+  sup {
+    font-size: 16px;
+  }
+  .activeText {
+    color: #24ba9f;
+    background-color: white;
+  }
+  .formContact {
+    display: block;
+    border: 1px solid #24ba9f;
+    width: 100%;
+    margin-bottom: 26px;
+    padding: 11px;
+    font-size: 36px;
+  }
+  .contactHeader {
+    padding-top: 31px;
+    margin-bottom: 46px;
+    color: #333333;
+    font-size: 20px;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #e2e2e2;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #e2e2e2;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #e2e2e2;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #e2e2e2;
+  }
+  .noReSize {
+    resize: none;
+    height: 188px;
+  }
+  .formLeft {
+    width: 60%;
+    float: left;
+  }
+  .formRight {
+    width: 40%;
+    float: left;
+  }
+  .formSection {
+    height: 572px;
+  }
+  .confirm-box {
+    margin: 2px 0 0 63px;
+  }
+  .sendAll {
+    margin: 104px 0 0 64px;
+    padding: 14px;
+    font-size: 36px;
+    width: 342px;
+    background-color: #24ba9f;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  #confirm-Text {
+    font-size: 18px;
+    padding-top: 3px;
+  }
+  .redChair {
+    margin: 88px 0 0 82px;
+    height: 210px;
+    width: 264px;
+    background-image: url("..//images/red_chair.png");
+    background-size: cover;
+    position: relative;
+  }
+  .footerText {
+    line-height: 39px;
+    font-size: 17px;
+  }
+  .footerText2 {
+    float: right;
+    line-height: 20px;
+    font-size: 21px;
+    margin-left: 68px;
+    margin-top: 12px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .show {
+    display: block;
+  }
+  .footerRight {
+    width: 40%;
+    text-align: right;
+  }
+  .sending__section {
+    width:100%;
+    position: relative;
+}
+.checkbox {
+    display: flex;
+    margin-top:85px;
+    color: gray;
+    font-size: 18px;
+    margin-left: 35px;
+    position: absolute;
+    width: 380px;
+}
+.submit__form {
+  margin-top:145px;
+  width: 67%;
+  height: 70px;
+  background-color: #24BA9F;
+  border-color: #24BA9F;
+  color:white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: Arial;
+  border: none;
+  text-transform: uppercase;
+  margin-left: 40px;
+  position: absolute;
+}
+.submit__form:hover {
+  background-color: lightgray;
+  color: #24BA9F;
+  border: none;
+  cursor: pointer;
+}
+.checkbox__picture {
+    width: 67px;
+    height: 45px;
+    background-image: url("../images/form_ok.jpg");
+    background-repeat: no-repeat;
+    border: 1px solid #24BA9F;
+    margin-right:20px;
+}
+  .icon {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+  }
+  .vimeo {
+    background-position: 0 35px;
+    background-image: url(..//images/vimeo.png);
+  }
+  .pinterest {
+    background-position: 0 70px;
+    background-image: url(../images/pinterest.png);
+  }
+  .twitter {
+    background-position: 0 105px;
+    background-image: url(../images/twitter.png);
+  }
+
+  .flickr{
+    background-image: url(../images/flickr.png);
+  }
+  footer {
+    height: 80px;
+    color:  gray;
+  }
+  .footerText2{
+    text-transform: uppercase;
+  }
+  .price_section{
+    font-size: 20px;
+    padding-top:20px;
+    color: #333333;
+  }
+  
